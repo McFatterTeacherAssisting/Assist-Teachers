@@ -34,6 +34,14 @@ app=Flask(__name__)
 def home_page():
     return render_template("homepage.html")
 
+def internship_settings():
+    defaults=[]#Replace this with settings for current user from database.
+    return render_template("internship_form.html", defaults)
+
+def equipment_approval():
+    students=[]#Replace this with students list form database
+    return render_template("equipment_approval.html", students)
+
 
 if __name__=="__main__":
     app.run(debug=True)

@@ -1,0 +1,88 @@
+<!doctype HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/stylesheets/main.css" />
+		<title>Welcome</title>
+	</head>
+	<body>
+		<div id="main-container">
+			<header id="header">
+				Naww
+			</header>
+			<div id="content-container">
+				<div id="content-area">
+					<form method="POST">
+						<h1>Internship Information Sheet</h1>
+						<label id="first-name">First Name:</label>
+						<input type="text" name="first-name" required /><br>
+						<label id="last-name" required >Last Name:</label>
+						<input type="text" name="last-name" /><br>
+						<label id="school-name" required>School Name:</label>
+						<input type="text" name="school-name" required /><br>
+						<label id="school-address">School Address: </label>
+						<input type="text" name="school-address" required /><br>
+						<label id="school-number">School Number: </label>
+						<input type="tel" name="school-number" required /><br>
+						<label id="supervising-teacher">Name of Supervising Teacher: </label>
+						<input type="text" name="supervising-teacher" required /><br>
+						<h2>Interneship Schedule</h2>
+						<table>
+							<tr>
+								<th>Days at Work</th>
+								<th>Schedule/Duties</th>
+								<th>Start Time</th>
+								<th>End Time</th>
+								<th>Room Number</th>
+								<th>Teacher</th>
+							</tr>
+							<tr>
+								<td>Monday</td>
+								<td><textarea id="monday-schedule" class="schedule-duties"></textarea></td>
+								<td><input id="monday-start-time" type="time" /></td>
+								<td><input id="monday-end-time" type="time" /></td>
+								<td><input id="monday-room-number" type="number" /></td>
+								<th><input id="monday-teacher" type="text" /></th>
+							</tr>
+							<tr>
+								<td>Tuesday</td>
+								<td><textarea id="tuesday-schedule" class="schedule-duties"></textarea></td>
+								<td><input id="tuesday-start-time" type="time" /></td>
+								<td><input id="tuesday-end-time" type="time" /></td>
+								<td><input id="tuesday-room-number" type="number" /></td>
+								<th><input id="tuesday-teacher" type="text" /></th>
+							</tr>
+							<tr>
+								<td>Wednesday</td>
+								<td><textarea id="wednesday-schedule" class="schedule-duties"></textarea></td>
+								<td><input id="wednesday-start-time" type="time" /></td>
+								<td><input id="wednesday-end-time" type="time" /></td>
+								<td><input id="wednesday-room-number" type="number" /></td>
+								<th><input id="wednesday-teacher" type="text" /></th>
+							</tr>
+							<tr>
+								<td>Thursday</td>
+								<td><textarea id="thursday-schedule" class="schedule-duties"></textarea></td>
+								<td><input id="thursday-start-time" type="time" /></td>
+								<td><input id="thursday-end-time" type="time" /></td>
+								<td><input id="thursday-room-number" type="number" /></td>
+								<th><input id="thursday-teacher" type="text" /></th>
+							</tr>
+							<tr>
+								<td>Friday</td>
+								<td><textarea id="friday-schedule" class="schedule-duties"></textarea></td>
+								<td><input id="friday-start-time" type="time" /></td>
+								<td><input id="friday-end-time" type="time" /></td>
+								<td><input id="friday-room-number" type="number" /></td>
+								<th><input id="friday-teacher" type="text" /></th>
+							</tr>
+						</table>
+						<input type="submit" value="Submit" />
+					</form>
+				</div>
+				<div id="sidebar">
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/stylesheets/main.css" />
+		<title>Welcome</title>
+	</head>
+	<body>
+		<div id="main-container">
+			<header id="header">
+				Naww
+			</header>
+			<div id="content-container">
+				<div id="content-area">
+					<form method="post">
+						<h1>Equipment  Approval Form</h1>
+						<input name="student" placeholder="Teacher Assisting Student" list="assisting-students" required />
+						<datalist id="assisting-students">
+						{%for student in students.student_list%}
+							<option value="{{student}}">{{student}}</option>
+						{%endfor%}
+						</datalist>
+						<span>has demonstrated proficiency in utilizing the followin technologies and equipment.</span>
+						<input type="checkbox" name="approved" value="computer-printer"><span id="computer-printer">Computer/Printer</span><br>
+						<input type="checkbox" name="approved" value="fax"><span id="fax">Fax</span><br>
+						<input type="checkbox" name="approved" value="photocopier"><span id="photocopier">Photocopier</span><br>
+						<input type="checkbox" name="approved" value="pony"><span id="pony">Interdepartmental mail (Pony)</span><br>
+						<input type="checkbox" name="approved" value="lcd-projector"><span id="lcd-projector">LCD Projector</span><br>
+						<input type="checkbox" name="approved" value="other"><input type="text" name="other-text" placeholder="Other" id="other" /><br>
+						<input type="submit" value="Submit"> later
+					</form>
+				</div>
+				<div id="sidebar">
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

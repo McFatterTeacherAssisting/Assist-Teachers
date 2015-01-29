@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 """
 A site that assists Teachers with rating assistants amongst other features.
-Copyright (c) 2014, [fullname]
+Copyright (c) 2014, Seth Nash
+Copyright (c) 2014, Khalil Smith
+Copyright (c) 2014, Kyle Berkes
+Copyright (c) 2014, Mathew Barfield
+Copyright (c) 2014, Jordan Jones
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -30,7 +34,7 @@ from flask import Flask, render_template
 import sys
 
 app=Flask(__name__)
-@app.ruote("/")
+@app.route("/")
 def home_page():
     return render_template("homepage.html")
 
